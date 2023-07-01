@@ -5,7 +5,7 @@ Es una aplicación homebrew MUY simple usando libnx y sus componentes para poder
 La instalación estan sencilla que un boracho con los ojos cerrados y con un pié atado lo puede hacer.
 
 1. Descarga el archivo .nro
-2. Copialo en tu carpeta llamada `switch` de la tarjeta SD
+2. Copialo en tu carpeta llamada `switch/` de la tarjeta SD
 
 ## Funcionamiento
 El funcionamiento es sencillo, solo muestra textos de un arreglo (Array) que está en la misma aplicación, un listado con frases/oraciones sin sentido, simplemente para leerlas y ya xd.

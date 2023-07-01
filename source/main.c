@@ -64,7 +64,7 @@ int main(int argc, char **argv)
     1046, 1046, 2349, 1760, 1661, 1567, 1396, 1174, 1396, 1567, 
 
 }; 
-    int tempo = 120; // Tempo en BPM de megalovania
+    int tempo = 125; // Tempo en BPM de megalovania
     int currentNote = 0; // el index de la nota xd
     int note_duration = (60 * 1000000) / (tempo * 4); // Duración de una nota de negra en microsegundos
     bool megalovania = false;
@@ -117,27 +117,12 @@ int main(int argc, char **argv)
 
         if (kDown & HidNpadButton_X) 
         {
-            megalovania = true;
-       
+            megalovania = !megalovania;
         }
 
         if (kDown & HidNpadButton_B) // duh
         {
             cur += 10;
-            if (DEBUG)
-            {
-                printf("\x1b[2J"); // Clear the console
-                printf("%s\n", default_text);
-                if (currentTextIndex < TEXT_COUNT)
-                    printf("\n\n%s<\n\n", texts[currentTextIndex]);
-                else
-                    printf("esto no deberia aparecer, si aparece reportalo porfa xd.");
-                printf("\n\n\nDEBUG:");
-                printf("\n\n\nCur %i", cur);
-                printf("\n\n\nHasSound %e", play_tone);
-                printf("\n\n\nHasB %e", HidNpadButton_B);
-
-            }
         }
 
         if (kDown & HidNpadButton_A)
@@ -149,11 +134,10 @@ int main(int argc, char **argv)
             printf("%s\n", default_text);
 
             if (currentTextIndex < TEXT_COUNT)
-                printf("\n\n%s<\n\n", texts[currentTextIndex]);
+                printf("\n\n%s\n\n", texts[currentTextIndex]);
             else
                 printf("esto no deberia aparecer, si aparece reportalo porfa xd.");
 	        printf("\n\n\nDesarollado con mucho amor y carino, lagrimas y sudor, esfuerzo y toda esa madre por: MrNiz | Repositorio GitHub oficial: https://github.com/MrNiz/my-first-app-nx/");
-        
         }
         if (R_SUCCEEDED(rc) && play_tone)
         {

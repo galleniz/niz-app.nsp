@@ -44,8 +44,7 @@ BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
-ICON 		:= icon.jpg
-APP_VERSION := 1.0
+APP_VERSION := 1.1
 APP_AUTHOR := MrNiz
 #ROMFS	:=	romfs
 

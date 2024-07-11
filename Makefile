@@ -38,14 +38,14 @@ include $(DEVKITPRO)/libnx/switch_rules
 #   NACP building is skipped as well.
 #---------------------------------------------------------------------------------
 TARGET		:=	$(notdir $(CURDIR))
-APP_TITLE   :=  My First nx homebrew APP! (esp)
+APP_TITLE   :=  Niz-app
 
 BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 APP_VERSION := 1.1
-APP_AUTHOR := MrNiz
+APP_AUTHOR := GalleNiz
 #ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
